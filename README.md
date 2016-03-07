@@ -3,6 +3,7 @@ Best practices and Proposals for efficient Global development, internal open sou
 
 # Install
 git clone https://github.com/opentable/topgear.git
+
 npm install
 
 Additionally, you might want to install these globally
