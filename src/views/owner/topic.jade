@@ -1,0 +1,145 @@
+- var x = -800
+- var y = -12500
+
+.step.text-center(data-x = x, data-y = y, data-scale = 6)
+	h2.v-middle.
+		Ownership
+
+.step#long-pipe(data-x = x -= 500, data-y = y += 1200, data-scale = 1)
+	h2.
+		Spectrum of different types of teams
+
+	table
+		tr
+			td(colspan = 2)
+				.long-pipe
+		tr
+			td
+				.arrow-left
+
+			td
+				.arrow-right
+		tr
+			td
+				.left-box.
+					<br/>
+					<br/>
+					<b> Fixed teams </b>
+					<br/>
+					<br/>
+					- Teams co-located (Development, Design, Product)
+					<br/>
+					- Teams have quite a bit of historical context, on top of issues, capabilities, working closely together on a roadmap.
+					<br/>
+					- Prioritization is easy, though if there are lot of priorities, it is harder for a single team to fulfill all of those
+			td
+				.right-box.
+					<br/>
+					<br/>
+					<b> Flexible / Resource teams </b>
+					<br/>
+					<br/>
+					- Teams are completely ‘non-domain’ aligned.
+					<br/>
+					- Resources move around taking on high priority tasks that match the skillset.
+					<br/>
+
+
+		.you-are-here
+		.you-are-here-msg.
+			We are somewhere here
+
+
+.step(data-x = x += 1200, data-y = y, data-scale = 1)
+	b.
+		For any domain X
+	br
+	br
+	br
+
+	table
+		tr
+			td
+				img(src='assets/product lead.png')
+				div.
+					Current Expert for domain X
+			td.valign-top
+				.font-medium.
+					- Historical context is needed to understand the domain
+					<br/>
+					- Best practices for code, process and monitoring is already standardized.
+					<br/>
+					- Technology choices are made, and if need to be revised, it has to be a consensus.
+					<br/>
+					- Training each person remotely, and reviewing code on top of regular activities is strenuous.
+
+
+.step(data-x = x += 1000, data-y = y, data-scale = 1)
+	b.
+		For the same domain X
+	br
+	br
+	br
+
+	table
+		tr
+			td
+				img(src='assets/project lead.png')
+				div.
+					Potential Expert for domain X
+			td.valign-top
+				.font-medium.
+					- Completely understand some part of it, not an expert in other areas
+					<br/>
+					- Can do each of those processes better
+					<br/>
+					- Arriving at a consensus is hard given time zone differences, need to be flexible in adopting new tech.
+					<br/>
+					- Getting code reviewed is hard, getting consensus on best practices is hard
+
+
+.step(data-x = x += 5000, data-y = y, data-scale = 6)
+	h1.text-center Process proposal
+
+.step(data-x = x -= 2500, data-y = y += 1200, data-scale = 1)
+	h2 A few guiding principles</i>
+	<br/><br/>
+
+	.text-center.font-medium.
+		Identify a <b>process</b> - Simple, Iterative, Accommodative
+		<br/><br/>
+		<b>Implement</b> - No Additional Overhead
+		<br/><br/>
+		Learn, <b>Revise</b> &amp; Readjust - Flexibility & Adopting evolving ideas
+		<br/><br/>
+		<b>Standardize</b> - Documents, Videos or any material needed to standardize
+
+.step(data-x = x += 1000, data-y = y, data-scale = 1)
+	h2 Players
+	table
+		tr
+			td.text-center.font-medium Product Lead
+			td.text-center.font-medium Project Lead
+		tr
+			td.text-center
+				img(src='assets/product lead.png')
+			td.text-center
+				img(src='assets/project lead.png')
+		tr
+			td
+				.font-medium.
+					- Goals more verticalized for domain X
+					<br/><br/>
+
+					- Interested in X, passionate, want X to be a revenue and NPS driver
+
+			td
+				.font-medium(style='margin-left: 20px').
+					- Goals more horizontal spanning across domains
+					<br/><br/>
+					- Interested in wider objectives leading to NPS and revenue growth
+					<br/><br/>
+					- Product team at the core, Wears the hat of a project team while working on domain X.
+
+
+

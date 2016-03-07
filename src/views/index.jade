@@ -1,6 +1,8 @@
 doctype html
 html(lang='en')
 	head
+		title Top Gear
+		link(href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css')
 		link(rel='stylesheet', type='text/css', href='lib/impress/impress.css')
 		link(rel='stylesheet', type='text/css', href='styles/index.css')
 	body
@@ -9,8 +11,13 @@ html(lang='en')
 			include ./title/title.jade
 			include ./challenges/challenges.jade
 			include ./agree/lets_agree.jade
+			include ./int_terms/terms.jade
+			include ./owner/topic.jade
 
 
 		script(src = 'lib/impress/impress.min.js')
 		script.
 			impress().init()
+
+		script(src='lib/jquery/jquery.min.js')
+		script(src='scripts/index.js')

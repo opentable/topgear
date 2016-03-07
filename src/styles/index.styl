@@ -1,3 +1,30 @@
+// Utility functions
+
+transition(transition)
+	-moz-transition transition
+	-o-transition transition
+	-webkit-transition transition
+	transition transition
+
+box-shadow()
+	-moz-box-shadow arguments
+	-webkit-box-shadow arguments
+	box-shadow arguments
+
+border-radius(radius)
+	-moz-border-radius radius
+	-webkit-border-radius radius
+	border-radius radius
+	
+transition-delay()
+	-webkit-transition-delay arguments
+	-moz-transition-delay arguments
+	-ms-transition-delay arguments
+	-o-transition-delay arguments
+	transition-delay arguments
+
+// Common styles
+
 .text-center
 	text-align center
 
@@ -8,5 +35,74 @@
 	font-size 200%
 	line-height 2
 
-.slide-title
+.slide-title, h2
 	color rgb(214, 59, 74)
+	
+.valign-top
+	vertical-align top
+
+// Ownership approaches
+.long-pipe	
+	height 20px
+	background-color lighten(green, 20%)
+	width 200px	
+
+#long-pipe.present .long-pipe
+	transition(width 2s ease)
+	transition-delay(0.1s)
+	width 1000px
+
+#long-pipe	
+	.arrow-left
+		width 0
+		height 0
+		border-left 10px solid transparent
+		border-right 10px solid transparent
+		border-top 10px solid #000
+		position relative
+		margin-top 30px
+
+	.arrow-right
+		width 0
+		height 0
+		border-left 10px solid transparent
+		border-right 10px solid transparent
+		border-top 10px solid #000
+		position relative
+		margin-top 30px
+		float right
+
+	.arrow-left, .arrow-right, .left-box, .right-box, .you-are-here, .you-are-here-msg
+		opacity 0
+
+	.left-box, .right-box, .you-are-here, .you-are-here-msg
+		font-size 40%
+		vertical-align top
+	
+	.left-box
+		float left
+	
+	.right-box		
+		text-align right
+		float right
+	
+	.you-are-here
+		height 20px
+		width 20px
+		border-radius(20px)
+		background-color red
+	
+	.you-are-here, .you-are-here-msg
+		position absolute
+		left 40%
+		
+	.you-are-here
+		top 30%
+	.you-are-here-msg
+		top 40%
+
+.font-medium
+	font-size 60%
+
+.font-small
+	font-size 40%
