@@ -41,6 +41,36 @@ transition-delay()
 .valign-top
 	vertical-align top
 
+.font-medium
+	font-size 60%
+
+.font-small
+	font-size 40%
+	
+.w20
+	width 20%
+.h20
+	height 20px
+	
+.arrow-left
+	width 0
+	height 0
+	border-left 10px solid transparent
+	border-right 10px solid transparent
+	border-top 10px solid #000
+	position relative
+	margin-top 30px
+
+.arrow-right
+	width 0
+	height 0
+	border-left 10px solid transparent
+	border-right 10px solid transparent
+	border-top 10px solid #000
+	position relative
+	margin-top 30px
+	float right
+
 // Ownership approaches
 .long-pipe	
 	height 20px
@@ -53,24 +83,6 @@ transition-delay()
 	width 1000px
 
 #long-pipe	
-	.arrow-left
-		width 0
-		height 0
-		border-left 10px solid transparent
-		border-right 10px solid transparent
-		border-top 10px solid #000
-		position relative
-		margin-top 30px
-
-	.arrow-right
-		width 0
-		height 0
-		border-left 10px solid transparent
-		border-right 10px solid transparent
-		border-top 10px solid #000
-		position relative
-		margin-top 30px
-		float right
 
 	.arrow-left, .arrow-right, .left-box, .right-box, .you-are-here, .you-are-here-msg
 		opacity 0
@@ -101,8 +113,35 @@ transition-delay()
 	.you-are-here-msg
 		top 40%
 
-.font-medium
-	font-size 60%
+.phases 
+	border-top 1px gray solid
+	border-bottom 1px gray solid
+	border-left 1px gray solid
+	
+	td
+		padding 40px
+		border-right 1px gray solid
+		
 
-.font-small
-	font-size 40%
+#quarters
+	table
+		border-spacing 10px
+		padding 40px
+	
+		td
+			padding 20px		
+		.colorme
+			background-color green
+
+.pebble
+	position relative
+	width 5%
+
+.arrow-right-tech
+	width 0
+	height 0
+	border-bottom 20px solid transparent
+	border-left 20px solid green
+	border-top 20px solid transparent
+	position relative
+	margin-top -40px

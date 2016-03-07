@@ -1,0 +1,43 @@
+- var x = 15800
+- var y = -12500
+
+.step.text-center(data-x = x, data-y = y, data-scale = 6)
+	h2.v-middle.
+		Technology
+
+.step(data-x = x -= 500, data-y = y += 1200, data-scale = 1)
+	h2 A Look back
+	br
+	br
+	table
+		tr
+			td
+				img.rock(src='assets/monolith rock.png') 
+			td(style='padding: 100px; vertical-align: middle')
+				.arrow-right-tech
+			td(style='position: relative; vertical-align: top')
+				- for (var i = 0; i < 10; i++) {
+					- var l = Math.random() * 100
+					- var t = Math.random() * 100
+					img.pebble(src='assets/monolith rock.png', style="top: #{ t }px; left: #{ l }px")
+				- }
+
+	.font-medium.
+		Great accomplishment in less than 3 years. How do we manage the pebbles?
+
+
+.step(data-x = x += 1000, data-y = y, data-scale = 1)
+	h2 Proposed code organization
+	img(src='assets/tech stack.jpg', style='margin-left: 0px')
+
+.step(data-x = x += 1500, data-y = y, data-scale = 1)
+	h2 Deployment uniformity
+	br
+	.font-medium.
+		- Need to unify our deployment needs
+		<br/><br/>
+		- Operationally simple
+		<br/><br/>
+		- Docker & Mesos as standard deployable unit?
+		<br/><br/>
+		- As much as possible, deployable units as separate source package

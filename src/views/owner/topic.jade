@@ -143,3 +143,63 @@
 
 
 
+.step(data-x = x += 1000, data-y = y, data-scale = 1)
+	h2 Phases
+	br
+	br
+	.font-medium
+		.font-medium
+			table.phases
+				tr
+					td.text-center Problem / Potential Discussion
+					td.text-center Prioritization & Planning
+					td.text-center Architecture / Design Approaches
+					td.text-center Development
+					td.text-center Post-Production
+
+
+.step(data-x = x += 1500, data-y = y, data-scale = 1)
+	h2 Timeline
+	#quarters.font-medium
+		div.
+			Q<subscript>c</subscript> Current Quarter
+			<br/>
+			Q<subscript>n</subscript> Next Quarter
+
+		br
+
+		.font-medium
+			table(cellspacing=2, cellpadding=30)
+				tr
+					td.w20.
+						20d before Q<subscript>n</subscript>
+					td.w20.
+						10d before Q<subscript>n</subscript>
+					td.w20.
+						5d before Q<subscript>n</subscript>
+					td.w20.
+						5d before Q<subscript>n</subscript>
+					td.w20.
+						Q<subscript>n</subscript>
+
+				tr
+					td.h20.colorme(colspan=10).
+						&nbsp;
+				tr
+					td.
+						Top asks from each other goals. Asks broken down to: Domain, type of work (<i>complete development</i>, <i>help with implmentation</i>, <i>knowledge help</i> etc.) and high level estimate in terms of <b>no. of days</b> for each type {unless its complete development}.
+					td.
+						Product and Product Leads from PM, Eng & Design discuss the prospect / requirement
+					td.
+						Leads finalize prioritized list of what's in & out for the qtr. Decides if a project is done by Product team or Project team.
+					td.
+						Eng leads determine training needs for each team. Identifies potential expert in domain X. Shares design principles, best practices, guidelines.
+
+					td.
+						- Reviews design
+						<br/>
+						- Reviews code
+						<br/>
+						Few Side by Side for merges & deployments
+
+
