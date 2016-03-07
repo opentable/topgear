@@ -1,0 +1,1 @@
+Best practices and Proposals for efficient Global development, internal open source, topic of Ownership
