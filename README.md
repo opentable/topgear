@@ -6,12 +6,16 @@ git clone https://github.com/opentable/topgear.git
 
 npm install
 
-Additionally, you might want to install these globally
+Additionally, you might want to install these globally:
+
 npm install budo gulp -g
 
 Once dist folder is built:
+
 cd dist
+
 budo --live
 
 Open browser and navigate to:
+
 http://192.168.99.1:9966/
