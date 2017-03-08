@@ -10,6 +10,9 @@ Additionally, you might want to install these globally:
 
 npm install budo gulp -g
 
+Now you can build the assets
+gulp 
+
 Once dist folder is built:
 
 cd dist
